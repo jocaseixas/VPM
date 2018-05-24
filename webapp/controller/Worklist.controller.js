@@ -106,7 +106,7 @@ sap.ui.define([
 			  var errorMessage = this.getView().getModel("i18n").getResourceBundle().getText("oDataSaveErrorProdList");
 
 				// The source is the list item that got pressed
-			  var oList = sap.ui.getCore().byId("application-VPMSetupProductFields-display-component---worklist--table").getSelectedItems();
+			  var oList = this.getView().byId("table").getSelectedItems();
 			  var i = 0;
 			    // Get the Lines that were selected
 			  for( i = 0; i < oList.length; i++ ){
